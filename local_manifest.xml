@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="romeo"
+        fetch="https://github.com/RdW-afk" />
+        <remote name="oldcrocs"
+        fetch="https://github.com/Old-Crocs" />
+
+        <!-- Sync trees -->
+        <project path="device/asus/sdm660-common" name="Common-tree13" remote="romeo" revision="x" />
+        <project path="device/asus/X00TD" name="depis_tree" remote="romeo" revision="x" />
+        <project path="vendor/asus" name="pendor_tree" remote="romeo" revision="x" />
+
+        <!-- msm8998 HALs -->
+        <remove-project name="android_hardware_qcom_audio" />
+        <remove-project name="android_hardware_qcom_media" />
+        <remove-project name="android_hardware_qcom_display" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="oldcrocs" revision="13o" />
+        <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="romeo" revision="13" />
+        <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="romeo" revision="13o" />
+
+</manifest>
